@@ -1,18 +1,19 @@
 /*DROP DATABASE siu;*/
 
-USE siu;
+USE cinevision;
 -- -----------------------------------------------------
 -- Table `educativo`.`Alumnos`
 -- -----------------------------------------------------
 CREATE TABLE alumnos
  (
-  carnet_alumno VARCHAR(15),
+ codigo_alumno INT NOT NULL AUTO_INCREMENT,
+  carnet_alumno VARCHAR(45),
   nombre_alumno VARCHAR(45),
   direccion_alumno VARCHAR(45),
   telefono_alumno VARCHAR(45),
   email_alumno VARCHAR(20),
   estatus_alumno VARCHAR(1),
-  PRIMARY KEY (carnet_alumno)
+  PRIMARY KEY (codigo_alumno)
 ) ENGINE = InnoDB DEFAULT CHARSET=latin1;
 
 -- -----------------------------------------------------
@@ -20,7 +21,7 @@ CREATE TABLE alumnos
 -- -----------------------------------------------------
 CREATE TABLE maestros
 (
-  codigo_maestro VARCHAR(5),
+  codigo_maestro VARCHAR(100),
   nombre_maestro VARCHAR(45),
   direccion_maestro VARCHAR(45),
   telefono_maetro VARCHAR(45),
@@ -108,16 +109,16 @@ CREATE TABLE asignacioncursosalumnos
   codigo_seccion VARCHAR(5),
   codigo_aula VARCHAR(5),
   codigo_curso VARCHAR(5),
-  carnet_alumno VARCHAR(15),
+ codigo_alumno INT NOT NULL AUTO_INCREMENT,
   nota_asignacioncursoalumnos FLOAT(10,2), 
-  PRIMARY KEY (codigo_carrera, codigo_sede, codigo_jornada, codigo_seccion, codigo_aula, codigo_curso, carnet_alumno),
+  PRIMARY KEY (codigo_carrera, codigo_sede, codigo_jornada, codigo_seccion, codigo_aula, codigo_curso, codigo_alumno),
   FOREIGN KEY (codigo_carrera) REFERENCES carreras(codigo_carrera),
   FOREIGN KEY (codigo_sede) REFERENCES sedes(codigo_sede),
   FOREIGN KEY (codigo_jornada) REFERENCES jornadas(codigo_jornada),
   FOREIGN KEY (codigo_seccion) REFERENCES secciones(codigo_seccion),
   FOREIGN KEY (codigo_aula) REFERENCES aulas(codigo_aula),
   FOREIGN KEY (codigo_curso) REFERENCES cursos(codigo_curso),
-  FOREIGN KEY (carnet_alumno) REFERENCES alumnos(carnet_alumno)
+  FOREIGN KEY (codigo_alumno) REFERENCES alumnos(codigo_alumno)
   ) ENGINE = InnoDB DEFAULT CHARSET=latin1;
 -- -----------------------------------------------------
 -- Table `educativo`.`Asignacion_cursos_maestros`
