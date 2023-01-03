@@ -1,0 +1,6 @@
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\bin\Debug\controlador_uni.dll
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\bin\Debug\controlador_uni.pdb
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\obj\Debug\controlador_uni.csproj.AssemblyReference.cache
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\obj\Debug\controlador_uni.csproj.CoreCompileInputs.cache
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\obj\Debug\controlador_uni.dll
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\controlador_uni\obj\Debug\controlador_uni.pdb
