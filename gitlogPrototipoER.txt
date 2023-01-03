@@ -1,0 +1,25 @@
+Diana@LAPTOP-BOI1BH8R MINGW64 ~/Desktop/PrototipoER/PrototipoER/Script (main)
+$ git log
+commit f9402eb3bb2358ad9274e6c85ca59ae3c040e20d (HEAD -> main, origin/main, origin/HEAD)
+Merge: 22a82f6 297b403
+Author: Diana Victores <60207204+Diana-Victores@users.noreply.github.com>
+Date:   Tue Jan 3 15:04:54 2023 -0600
+
+    Merge pull request #5 from Diana-Victores/scripts
+
+    actualizando scripts, agregando proceso
+
+commit 297b40377002378e7420fe8aac9d8890d5163bb8 (origin/scripts, scripts)
+Author: Diana Victores <dcpernillo@gmail.com>
+Date:   Tue Jan 3 15:04:27 2023 -0600
+
+    actualizando scripts, agregando proceso
+
+commit 22a82f6c35a2ecf444a41117e309cad60eeabad5
+Merge: 7b4a444 beddb01
+Author: Diana Victores <60207204+Diana-Victores@users.noreply.github.com>
+Date:   Tue Jan 3 15:01:16 2023 -0600
+
+    Merge pull request #4 from Diana-Victores/proceso9959191471
+
+:
