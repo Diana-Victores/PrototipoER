@@ -71,3 +71,4 @@ C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\vista_uni
 C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\vista_uni\bin\Debug\modelo_uni.pdb
 C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\vista_uni\obj\Debug\vista_uni.Maestros.resources
 C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\vista_uni\obj\Debug\vista_uni.MenuUniversidad.resources
+C:\Users\Diana\Desktop\PrototipoER\PrototipoER\Codigo\Universidad 2023\vista_uni\bin\Debug\vista_uni.dll.config

@@ -29,7 +29,6 @@ namespace vista_uni
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,16 +42,9 @@ namespace vista_uni
             this.textEmail = new System.Windows.Forms.TextBox();
             this.textEstatus = new System.Windows.Forms.TextBox();
             this.dgvMaestro = new System.Windows.Forms.DataGridView();
+            this.navegador1 = new NavegadorVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaestro)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(111, 42);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(574, 152);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // label1
             // 
@@ -165,11 +157,20 @@ namespace vista_uni
             this.dgvMaestro.TabIndex = 15;
             this.dgvMaestro.Tag = "maestros";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(89, 33);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(574, 152);
+            this.navegador1.TabIndex = 16;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_1);
+            // 
             // Maestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dgvMaestro);
             this.Controls.Add(this.textEstatus);
             this.Controls.Add(this.textEmail);
@@ -183,7 +184,6 @@ namespace vista_uni
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "Maestros";
             this.Text = "Maestros";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaestro)).EndInit();
@@ -193,8 +193,6 @@ namespace vista_uni
         }
 
         #endregion
-
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -208,5 +206,6 @@ namespace vista_uni
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.TextBox textEstatus;
         private System.Windows.Forms.DataGridView dgvMaestro;
+        private NavegadorVista.Navegador navegador1;
     }
 }

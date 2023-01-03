@@ -29,7 +29,6 @@ namespace vista_uni
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,16 +42,9 @@ namespace vista_uni
             this.textEmail = new System.Windows.Forms.TextBox();
             this.textEstatus = new System.Windows.Forms.TextBox();
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
+            this.navegador1 = new NavegadorVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(117, 43);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(574, 152);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // label1
             // 
@@ -164,11 +156,20 @@ namespace vista_uni
             this.dgvAlumnos.Size = new System.Drawing.Size(414, 167);
             this.dgvAlumnos.TabIndex = 13;
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(110, 37);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(574, 152);
+            this.navegador1.TabIndex = 14;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_1);
+            // 
             // Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.textEstatus);
             this.Controls.Add(this.textEmail);
@@ -182,7 +183,6 @@ namespace vista_uni
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "Alumnos";
             this.Text = "Alumnos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
@@ -192,8 +192,6 @@ namespace vista_uni
         }
 
         #endregion
-
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -207,5 +205,6 @@ namespace vista_uni
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.TextBox textEstatus;
         private System.Windows.Forms.DataGridView dgvAlumnos;
+        private NavegadorVista.Navegador navegador1;
     }
 }

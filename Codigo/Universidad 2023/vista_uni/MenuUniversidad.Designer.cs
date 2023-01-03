@@ -33,28 +33,28 @@ namespace vista_uni
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCatalogo = new System.Windows.Forms.Button();
             this.panelGeneral = new System.Windows.Forms.Panel();
-            this.panelCatalogo = new System.Windows.Forms.Panel();
-            this.buttonAlum = new System.Windows.Forms.Button();
-            this.btnProf = new System.Windows.Forms.Button();
-            this.buttonProceso = new System.Windows.Forms.Button();
-            this.panelProceso = new System.Windows.Forms.Panel();
-            this.btnRegitroNotaP = new System.Windows.Forms.Button();
-            this.btnSeguridad = new System.Windows.Forms.Button();
-            this.panelSeguridad = new System.Windows.Forms.Panel();
-            this.btnSeg = new System.Windows.Forms.Button();
-            this.btnHerra = new System.Windows.Forms.Button();
-            this.panelHerra = new System.Windows.Forms.Panel();
-            this.btnConsulta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panelSalir = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panelHerra = new System.Windows.Forms.Panel();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.btnHerra = new System.Windows.Forms.Button();
+            this.panelSeguridad = new System.Windows.Forms.Panel();
+            this.btnSeg = new System.Windows.Forms.Button();
+            this.btnSeguridad = new System.Windows.Forms.Button();
+            this.panelProceso = new System.Windows.Forms.Panel();
+            this.btnRegitroNotaP = new System.Windows.Forms.Button();
+            this.buttonProceso = new System.Windows.Forms.Button();
+            this.panelCatalogo = new System.Windows.Forms.Panel();
+            this.btnProf = new System.Windows.Forms.Button();
+            this.buttonAlum = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelGeneral.SuspendLayout();
-            this.panelCatalogo.SuspendLayout();
-            this.panelProceso.SuspendLayout();
-            this.panelSeguridad.SuspendLayout();
-            this.panelHerra.SuspendLayout();
             this.panelSalir.SuspendLayout();
+            this.panelHerra.SuspendLayout();
+            this.panelSeguridad.SuspendLayout();
+            this.panelProceso.SuspendLayout();
+            this.panelCatalogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -77,6 +77,7 @@ namespace vista_uni
             this.btnCatalogo.TabIndex = 1;
             this.btnCatalogo.Text = "Catalogo";
             this.btnCatalogo.UseVisualStyleBackColor = true;
+            this.btnCatalogo.Click += new System.EventHandler(this.btnCatalogo_Click);
             // 
             // panelGeneral
             // 
@@ -98,104 +99,36 @@ namespace vista_uni
             this.panelGeneral.Size = new System.Drawing.Size(200, 543);
             this.panelGeneral.TabIndex = 2;
             // 
-            // panelCatalogo
+            // panelSalir
             // 
-            this.panelCatalogo.Controls.Add(this.btnProf);
-            this.panelCatalogo.Controls.Add(this.buttonAlum);
-            this.panelCatalogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCatalogo.Location = new System.Drawing.Point(0, 38);
-            this.panelCatalogo.Name = "panelCatalogo";
-            this.panelCatalogo.Size = new System.Drawing.Size(183, 100);
-            this.panelCatalogo.TabIndex = 2;
+            this.panelSalir.Controls.Add(this.btnSalir);
+            this.panelSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSalir.Location = new System.Drawing.Point(0, 530);
+            this.panelSalir.Name = "panelSalir";
+            this.panelSalir.Size = new System.Drawing.Size(183, 100);
+            this.panelSalir.TabIndex = 10;
             // 
-            // buttonAlum
+            // btnSalir
             // 
-            this.buttonAlum.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAlum.Location = new System.Drawing.Point(0, 0);
-            this.buttonAlum.Name = "buttonAlum";
-            this.buttonAlum.Size = new System.Drawing.Size(183, 23);
-            this.buttonAlum.TabIndex = 0;
-            this.buttonAlum.Text = "Alumno";
-            this.buttonAlum.UseVisualStyleBackColor = true;
-            this.buttonAlum.Click += new System.EventHandler(this.buttonAlum_Click);
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalir.Location = new System.Drawing.Point(0, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(183, 23);
+            this.btnSalir.TabIndex = 0;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnProf
+            // button2
             // 
-            this.btnProf.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProf.Location = new System.Drawing.Point(0, 23);
-            this.btnProf.Name = "btnProf";
-            this.btnProf.Size = new System.Drawing.Size(183, 23);
-            this.btnProf.TabIndex = 1;
-            this.btnProf.Text = "Profesor";
-            this.btnProf.UseVisualStyleBackColor = true;
-            // 
-            // buttonProceso
-            // 
-            this.buttonProceso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonProceso.Location = new System.Drawing.Point(0, 138);
-            this.buttonProceso.Name = "buttonProceso";
-            this.buttonProceso.Size = new System.Drawing.Size(183, 23);
-            this.buttonProceso.TabIndex = 3;
-            this.buttonProceso.Text = "Proceso";
-            this.buttonProceso.UseVisualStyleBackColor = true;
-            // 
-            // panelProceso
-            // 
-            this.panelProceso.Controls.Add(this.btnRegitroNotaP);
-            this.panelProceso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProceso.Location = new System.Drawing.Point(0, 161);
-            this.panelProceso.Name = "panelProceso";
-            this.panelProceso.Size = new System.Drawing.Size(183, 100);
-            this.panelProceso.TabIndex = 4;
-            // 
-            // btnRegitroNotaP
-            // 
-            this.btnRegitroNotaP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRegitroNotaP.Location = new System.Drawing.Point(0, 0);
-            this.btnRegitroNotaP.Name = "btnRegitroNotaP";
-            this.btnRegitroNotaP.Size = new System.Drawing.Size(183, 23);
-            this.btnRegitroNotaP.TabIndex = 0;
-            this.btnRegitroNotaP.Text = "Registro Notas";
-            this.btnRegitroNotaP.UseVisualStyleBackColor = true;
-            // 
-            // btnSeguridad
-            // 
-            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 261);
-            this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Size = new System.Drawing.Size(183, 23);
-            this.btnSeguridad.TabIndex = 5;
-            this.btnSeguridad.Text = "Seguridad";
-            this.btnSeguridad.UseVisualStyleBackColor = true;
-            // 
-            // panelSeguridad
-            // 
-            this.panelSeguridad.Controls.Add(this.btnSeg);
-            this.panelSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSeguridad.Location = new System.Drawing.Point(0, 284);
-            this.panelSeguridad.Name = "panelSeguridad";
-            this.panelSeguridad.Size = new System.Drawing.Size(183, 100);
-            this.panelSeguridad.TabIndex = 6;
-            // 
-            // btnSeg
-            // 
-            this.btnSeg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSeg.Location = new System.Drawing.Point(0, 0);
-            this.btnSeg.Name = "btnSeg";
-            this.btnSeg.Size = new System.Drawing.Size(183, 23);
-            this.btnSeg.TabIndex = 0;
-            this.btnSeg.Text = "Seguridad";
-            this.btnSeg.UseVisualStyleBackColor = true;
-            // 
-            // btnHerra
-            // 
-            this.btnHerra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHerra.Location = new System.Drawing.Point(0, 384);
-            this.btnHerra.Name = "btnHerra";
-            this.btnHerra.Size = new System.Drawing.Size(183, 23);
-            this.btnHerra.TabIndex = 7;
-            this.btnHerra.Text = "Herramientas";
-            this.btnHerra.UseVisualStyleBackColor = true;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Location = new System.Drawing.Point(0, 507);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(183, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panelHerra
             // 
@@ -216,51 +149,125 @@ namespace vista_uni
             this.btnConsulta.Text = "Consulta Avanzada";
             this.btnConsulta.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHerra
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 507);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHerra.Location = new System.Drawing.Point(0, 384);
+            this.btnHerra.Name = "btnHerra";
+            this.btnHerra.Size = new System.Drawing.Size(183, 23);
+            this.btnHerra.TabIndex = 7;
+            this.btnHerra.Text = "Herramientas";
+            this.btnHerra.UseVisualStyleBackColor = true;
+            this.btnHerra.Click += new System.EventHandler(this.btnHerra_Click);
             // 
-            // panelSalir
+            // panelSeguridad
             // 
-            this.panelSalir.Controls.Add(this.btnSalir);
-            this.panelSalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSalir.Location = new System.Drawing.Point(0, 530);
-            this.panelSalir.Name = "panelSalir";
-            this.panelSalir.Size = new System.Drawing.Size(183, 100);
-            this.panelSalir.TabIndex = 10;
+            this.panelSeguridad.Controls.Add(this.btnSeg);
+            this.panelSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSeguridad.Location = new System.Drawing.Point(0, 284);
+            this.panelSeguridad.Name = "panelSeguridad";
+            this.panelSeguridad.Size = new System.Drawing.Size(183, 100);
+            this.panelSeguridad.TabIndex = 6;
             // 
-            // btnSalir
+            // btnSeg
             // 
-            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSalir.Location = new System.Drawing.Point(0, 0);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(183, 23);
-            this.btnSalir.TabIndex = 0;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSeg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSeg.Location = new System.Drawing.Point(0, 0);
+            this.btnSeg.Name = "btnSeg";
+            this.btnSeg.Size = new System.Drawing.Size(183, 23);
+            this.btnSeg.TabIndex = 0;
+            this.btnSeg.Text = "Seguridad";
+            this.btnSeg.UseVisualStyleBackColor = true;
+            // 
+            // btnSeguridad
+            // 
+            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 261);
+            this.btnSeguridad.Name = "btnSeguridad";
+            this.btnSeguridad.Size = new System.Drawing.Size(183, 23);
+            this.btnSeguridad.TabIndex = 5;
+            this.btnSeguridad.Text = "Seguridad";
+            this.btnSeguridad.UseVisualStyleBackColor = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
+            // 
+            // panelProceso
+            // 
+            this.panelProceso.Controls.Add(this.btnRegitroNotaP);
+            this.panelProceso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProceso.Location = new System.Drawing.Point(0, 161);
+            this.panelProceso.Name = "panelProceso";
+            this.panelProceso.Size = new System.Drawing.Size(183, 100);
+            this.panelProceso.TabIndex = 4;
+            // 
+            // btnRegitroNotaP
+            // 
+            this.btnRegitroNotaP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegitroNotaP.Location = new System.Drawing.Point(0, 0);
+            this.btnRegitroNotaP.Name = "btnRegitroNotaP";
+            this.btnRegitroNotaP.Size = new System.Drawing.Size(183, 23);
+            this.btnRegitroNotaP.TabIndex = 0;
+            this.btnRegitroNotaP.Text = "Registro Notas";
+            this.btnRegitroNotaP.UseVisualStyleBackColor = true;
+            // 
+            // buttonProceso
+            // 
+            this.buttonProceso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProceso.Location = new System.Drawing.Point(0, 138);
+            this.buttonProceso.Name = "buttonProceso";
+            this.buttonProceso.Size = new System.Drawing.Size(183, 23);
+            this.buttonProceso.TabIndex = 3;
+            this.buttonProceso.Text = "Proceso";
+            this.buttonProceso.UseVisualStyleBackColor = true;
+            this.buttonProceso.Click += new System.EventHandler(this.buttonProceso_Click);
+            // 
+            // panelCatalogo
+            // 
+            this.panelCatalogo.Controls.Add(this.btnProf);
+            this.panelCatalogo.Controls.Add(this.buttonAlum);
+            this.panelCatalogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCatalogo.Location = new System.Drawing.Point(0, 38);
+            this.panelCatalogo.Name = "panelCatalogo";
+            this.panelCatalogo.Size = new System.Drawing.Size(183, 100);
+            this.panelCatalogo.TabIndex = 2;
+            // 
+            // btnProf
+            // 
+            this.btnProf.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProf.Location = new System.Drawing.Point(0, 23);
+            this.btnProf.Name = "btnProf";
+            this.btnProf.Size = new System.Drawing.Size(183, 23);
+            this.btnProf.TabIndex = 1;
+            this.btnProf.Text = "Profesor";
+            this.btnProf.UseVisualStyleBackColor = true;
+            // 
+            // buttonAlum
+            // 
+            this.buttonAlum.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAlum.Location = new System.Drawing.Point(0, 0);
+            this.buttonAlum.Name = "buttonAlum";
+            this.buttonAlum.Size = new System.Drawing.Size(183, 23);
+            this.buttonAlum.TabIndex = 0;
+            this.buttonAlum.Text = "Alumno";
+            this.buttonAlum.UseVisualStyleBackColor = true;
+            this.buttonAlum.Click += new System.EventHandler(this.buttonAlum_Click);
             // 
             // MenuUniversidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(894, 543);
             this.Controls.Add(this.panelGeneral);
             this.IsMdiContainer = true;
             this.Name = "MenuUniversidad";
-            this.Text = "MenuUniversidad";
+            this.Text = "MenuUniversidad Diana Victores 9959-19-1471";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelGeneral.ResumeLayout(false);
-            this.panelCatalogo.ResumeLayout(false);
-            this.panelProceso.ResumeLayout(false);
-            this.panelSeguridad.ResumeLayout(false);
-            this.panelHerra.ResumeLayout(false);
             this.panelSalir.ResumeLayout(false);
+            this.panelHerra.ResumeLayout(false);
+            this.panelSeguridad.ResumeLayout(false);
+            this.panelProceso.ResumeLayout(false);
+            this.panelCatalogo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

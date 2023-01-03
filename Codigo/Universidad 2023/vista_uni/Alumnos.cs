@@ -19,6 +19,11 @@ namespace vista_uni
 
         private void navegador1_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void navegador1_Load_1(object sender, EventArgs e)
+        {
             NavegadorVista.Navegador.idApp = "2003";
             TextBox[] Grupotextbox = { textID, textNombre,
                 textDireccion, textTelefono, textEmail, textEstatus,  };

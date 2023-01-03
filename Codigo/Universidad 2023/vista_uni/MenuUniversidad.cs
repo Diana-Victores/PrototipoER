@@ -73,5 +73,35 @@ namespace vista_uni
             b.Show();
             hideSubMenu();
     }
+
+        private void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelCatalogo);
+        }
+
+        private void buttonProceso_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelProceso);
+        }
+
+        private void btnSeguridad_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSeguridad);
+        }
+
+        private void btnHerra_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelHerra);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSeguridad);
+        }
     }
 }
